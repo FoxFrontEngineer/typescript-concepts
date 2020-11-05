@@ -53,12 +53,12 @@ console.info(cat.color)
 
 // Абстрактные классы
 
-abstract class Component {
+abstract class abstractComponent {
     abstract render():void
     abstract info():string
 }
 
-class AppComponent extends Component {
+class AppComponent extends abstractComponent {
     render(): void {
         console.info("Component on render")
     }
